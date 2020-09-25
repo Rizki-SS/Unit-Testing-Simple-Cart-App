@@ -14,12 +14,12 @@ const price = document.querySelector('#price');
 const subTotal = document.querySelector('#subtotal')
 
 price.addEventListener('change', () => {
-    (price.value < 0) ? price.value = 0: null;
+    if (price.value < 0) { price.value = 0 };
     subTotal.textContent = `Rp. ${sum(price.value, qtyInput.value)}`;
 });
 
 qtyInput.addEventListener('change', () => {
-    (qtyInput.value <= 0) ? qtyInput.value = 1: null;
+    if (qtyInput.value <= 0) { qtyInput.value = 1 };
     subTotal.textContent = `Rp. ${sum(price.value, qtyInput.value)}`;
 })
 
