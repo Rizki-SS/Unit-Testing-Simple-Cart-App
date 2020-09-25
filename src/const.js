@@ -1,5 +1,5 @@
 export const kupon = [{
-        kode: 'diskon60',
+        kode: 'diskon20',
         tipe: 'persen',
         jumlah: '20',
     },
@@ -7,5 +7,10 @@ export const kupon = [{
         kode: 'diskon2000',
         tipe: 'fix',
         jumlah: '2000',
+    },
+    {
+        kode: 'diskon1000',
+        tipe: 'fix',
+        jumlah: '1000',
     },
 ]
